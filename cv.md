@@ -23,18 +23,26 @@ I plan to further develop in Front-end development, as I like working with data 
 - Adobe Photoshop
 ### Code example:
 ***
-**Example from CODEWARS:**  *Your classmates asked you to copy some paperwork for them. You know that there are 'n' classmates and the paperwork has 'm' pages.  
-Your task is to calculate how many blank pages do you need. If n < 0 or m < 0 return 0.*
-```function paperwork(n, m) {
-  if(n<0 || m<0) {
-    return 0
-  }
-  else if(n>0 || m>0){
-    let calculate = n*m
-    return calculate
-  }
-}
+**Example from CODEWARS:**  *Write function bmi that calculates body mass index (bmi = weight / height2).*      
+*if bmi <= 18.5 return "Underweight"*      
+*if bmi <= 25.0 return "Normal"*    
+*if bmi <= 30.0 return "Overweight"*   
+*if bmi > 30 return "Obese"*  
 ```
+function bmi(weight, height) {
+   let indexMass = weight/Math.pow(height, 2) ;
+
+   if(indexMass <= 18.5) {
+     return "Underweight";
+   } else if (indexMass <= 25.0) {
+     return "Normal";
+   } else if (indexMass <= 30.0) {
+     return "Overweight";
+   } else if (indexMass > 30.0) {
+     return "Obese";
+   }
+ }
+```  
 ### Courses:
 ***
 - **ITAcademy**  
