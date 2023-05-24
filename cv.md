@@ -52,9 +52,8 @@ function bmi(weight, height) {
 - **UDEMY COURSES(www.udemy.com)**    
 *Basic course for PixiJS and Tween- animations*    
 - **RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)**
-
 ### Languages:
 ***
 - English - Pre-Intermediate  
 - Russian - Native  
-- Belarusian - Native  
+- Belarusian - Native
