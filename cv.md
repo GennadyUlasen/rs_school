@@ -42,7 +42,7 @@ function bmi(weight, height) {
      return "Obese";
    }
  }
-```  
+```
 ### Courses:
 ***
 - **ITAcademy**  
