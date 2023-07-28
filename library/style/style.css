@@ -130,6 +130,10 @@ p {
     margin: 20px 0 0 -25px;
 }
 
+#about, #favorites, #coffee, #contacts, #library:hover {
+    cursor: pointer;
+}
+
 .about p {
     text-align: center;
     font-family: Inter;
@@ -239,6 +243,30 @@ h3 span {
     border-radius: 2px;
     border: 1px solid #0C0C0E;
     color: #0C0C0E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+
+.button:hover {
+    transition: 2s;
+    border: 1px solid #BB945F;
+    background: #BB945F;
+}
+
+.own {
+    position: absolute;
+    bottom: 4%;
+    left: 3%;
+    width: 75px;
+    height: 30px;
+    border-radius: 2px;
+    border: 1px solid #BB945F;
+    color: #BB945F;
     text-align: center;
     font-family: Inter;
     font-size: 10px;
@@ -416,6 +444,12 @@ input::placeholder {
     letter-spacing: 1px;
 }
 
+.chek:hover {
+    transition: 2s;
+    border: 1px solid #BB945F;
+    background: #BB945F;
+}
+
 .wrapper-form {
     display: flex;
     flex-direction: row;
@@ -463,6 +497,12 @@ input::placeholder {
     letter-spacing: 1px;
 }
 
+.form-wrapper button:hover {
+    transition: 2s;
+    border: 1px solid #BB945F;
+    background: #BB945F;  
+}
+
 .footer {
     background-color: #0C0C0E;
     padding: 20px 20px;
@@ -473,6 +513,14 @@ input::placeholder {
     flex-direction: row;
     justify-content: space-between;
 }
+
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+}
+
 .footer-item p {
     color: #FFF;
     white-space: pre-line;
