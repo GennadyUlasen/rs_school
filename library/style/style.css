@@ -387,20 +387,6 @@ h3 span {
     text-transform: capitalize;
 }
 
-/* .start h3 {
-    text-align: end;
-}
-
-.desert {
-    text-align: end;
-    padding-right: 24px;
-}
-
-.paragraph {
-    text-align: end;
-    padding-right: 30px;
-} */
-
 .menu-item p {
     padding: 0;
     font-family: Inter;
@@ -723,17 +709,9 @@ input::placeholder {
         cursor: pointer;
     }
 
-}
-
-/*tablet 768*/
-
-@media (max-width: 768px) {
-    .swiper img:nth-child(2),.swiper img:nth-child(3) {
-        display: none;
-    }
-
-    .button-seasons label {
-        padding: 0 60px 0 0;
+    .swiper img {
+        max-width: 350px;
+        max-height: 460px;
     }
 
     .favorites-items {
@@ -770,128 +748,48 @@ input::placeholder {
         text-align: center;
     }
 
-    /* .form-wrapper p:nth-child(1), .form-wrapper p:nth-child(2), .form-wrapper p:nth-child(3) {
-        text-align: center;
-    } */
 }
 
-/* @media (max-width: 1270px) {
+@media (max-width: 960px) {
     .swiper img {
-        max-width: 350px;
-        max-height: 460px;
+        max-width: 300px;
+        max-height: 430px;
     }
 
-    .favorites-items {
-        flex-direction: column;
-        align-items: center;
+    .button-seasons label {
+        padding: 0 80px 0 0;
     }
-  }
+}
+/*tablet 768*/
 
-@media (max-width: 1100px) {
-
-    .burger-menu {
-        display: block;
-        margin-left: 40px;
-    }
-
-    .head-container ul {
+@media (max-width: 768px) {
+    .swiper img:nth-child(2),.swiper img:nth-child(3) {
         display: none;
     }
 
-    .mobile-nav {
-        display: none;
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 332px;
-        height: 570px;
-        z-index: 1;
-        background-color: #000;
+    .button-seasons label {
+        padding: 0 60px 0 0;
     }
+}
 
-    .mobile-nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 40px 0  0 0;
-        margin: 0;
-        height: 100%;
-    }
-
-    .mobile-nav ul li {
-        padding: 0 0 30px 0;
-        color: #FFF;
-        font-family: Inter;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 50px;
+@media (max-width: 767px) {
+    .contacts-item img {
+        width: 569px;
+        height: 370px;
         text-align: center;
     }
 
-    .burger:hover  {
-        cursor: pointer;
+    fieldset {
+        width: 490px;
+        height: 320px;
     }
 
-    .mobile-icons {
+    .swiper img:nth-child(2),.swiper img:nth-child(3) {
         display: block;
-        padding-top: 31px;
-        text-align: end;
-    }
-
-    .mobile-icons img:nth-child(1) {
-        padding-right: 40px;
-    }
-
-    .mobile-icons img:nth-child(2) {
-        padding-right: 31px;
     }
 
     .swiper img {
         max-width: 250px;
-        max-height: 360px;
+        max-height: 380px;
     }
-
-    .contacts-item img {
-        max-width: 596px;
-        max-height: 370px;
-    }
-
-    .menu {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .wrapper-contacts {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-    }
-
-    .start .menu-item p {
-        text-align: start;
-    }
-
-    .wrapper-form {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .form-wrapper p:nth-child(1), .form-wrapper p:nth-child(2), .form-wrapper p:nth-child(3) {
-        text-align: center;
-    }
-
-    @media (max-width: 860px) {
-
-        .swiper img {
-            max-width: 200px;
-            max-height: 300px;
-        }
-
-        .button-seasons label {
-            padding: 0;
-        }
-    }
-} */
+}
