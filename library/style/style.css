@@ -26,6 +26,11 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
+}
+
+.burger-menu {
+    display: none;
 }
 
 h1 {
@@ -42,6 +47,10 @@ nav ul {
     flex-direction: row;
 }
 
+.mobile-icons {
+    display: none;
+}
+
 ul li {
     padding-right: 32px;
     font-size: 20px;
@@ -54,6 +63,7 @@ a {
     color: #FFF;
     font-family: Inter;
     font-style: normal;
+    scroll-behavior: smooth;
 }
 
 ul {
@@ -379,20 +389,6 @@ h3 span {
     text-transform: capitalize;
 }
 
-/* .start h3 {
-    text-align: end;
-}
-
-.desert {
-    text-align: end;
-    padding-right: 24px;
-}
-
-.paragraph {
-    text-align: end;
-    padding-right: 30px;
-} */
-
 .menu-item p {
     padding: 0;
     font-family: Inter;
@@ -636,6 +632,10 @@ input::placeholder {
     white-space: pre-line;
 }
 
+.footer-item p:nth-child(2) {
+    text-align: end;
+}
+
 .user p{
     color: #FFF;
     text-align: center;
@@ -653,4 +653,144 @@ input::placeholder {
     margin: 0px 0 22px 0;
     background-color: #FFF;
 
+}
+
+/* mobile burger menu styles */
+
+.mobile-nav {
+    display: block;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    width: 332px;
+    height: 570px;
+    z-index: 1;
+    background-color: #000;
+}
+
+.burger-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0 0;
+    margin: 0;
+    text-align: center;
+}
+
+.burger-icons {
+    display: block;
+    padding-top: 31px;
+    text-align: end;
+}
+
+.burger-ul li {
+    padding: 0 0 30px 0;
+}
+
+.mobile-icons img:nth-child(1) {
+    padding-right: 40px;
+}
+
+.mobile-icons img:nth-child(2) {
+    padding-right: 31px;
+}
+
+@media (max-width: 1100px) {
+    .burger-menu {
+        display: block;
+        margin-left: 40px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .burger,.mobile-icons img:hover  {
+        cursor: pointer;
+    }
+
+    .swiper img {
+        max-width: 350px;
+        max-height: 460px;
+    }
+
+    .favorites-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .start {
+        align-self: flex-end;
+    }
+
+    .wrapper-contacts {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .contacts-item {
+        align-self: flex-start;
+    }
+
+    .wrapper-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-wrapper p:nth-child(1n + 1) {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 960px) {
+    .swiper img {
+        max-width: 300px;
+        max-height: 430px;
+    }
+
+    .button-seasons label {
+        padding: 0 80px 0 0;
+    }
+}
+/*tablet 768*/
+
+@media (max-width: 768px) {
+    .swiper img:nth-child(2),.swiper img:nth-child(3) {
+        display: none;
+    }
+
+    .button-seasons label {
+        padding: 0 60px 0 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .contacts-item img {
+        width: 569px;
+        height: 370px;
+        text-align: center;
+    }
+
+    fieldset {
+        width: 490px;
+        height: 320px;
+    }
+
+    .swiper img:nth-child(2),.swiper img:nth-child(3) {
+        display: block;
+    }
+
+    .swiper img {
+        max-width: 250px;
+        max-height: 380px;
+    }
 }
