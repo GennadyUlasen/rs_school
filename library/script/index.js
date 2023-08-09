@@ -15,11 +15,11 @@ burger.addEventListener('click', function(){
     menuLi.classList.toggle('burger-li');
     mobileIcons.classList.toggle('burger-icons');
     nav.classList.toggle('animation');
-})
+});
 
 close.addEventListener('click', function(){
     nav.classList.toggle('mobile-nav');
     menu.classList.toggle('burger-ul');
     menuLi.classList.toggle('.burger-li');
     mobileIcons.classList.toggle('burger-icons');
-})
+});

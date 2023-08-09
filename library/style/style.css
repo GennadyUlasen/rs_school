@@ -26,6 +26,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
 }
 
 .burger-menu {
@@ -62,6 +63,7 @@ a {
     color: #FFF;
     font-family: Inter;
     font-style: normal;
+    scroll-behavior: smooth;
 }
 
 ul {
@@ -658,13 +660,12 @@ input::placeholder {
 .mobile-nav {
     display: block;
     position: absolute;
-    right: 0;
+    right: -20px;
     top: 0;
     width: 332px;
     height: 570px;
     z-index: 1;
     background-color: #000;
-    transition: 1s;
 }
 
 .burger-ul {
